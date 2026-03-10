@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 
 
 
-llm = ChatOpenAI(temperature=0)
+llm = ChatOpenAI(model="gpt-5-mini", temperature=0)
 
 class GradeHallucinations(BaseModel):
     """Binary score for hallucination present in generation answer."""
